@@ -6,4 +6,5 @@ seaborn
 flask
 streamlit
 scikit-learn
+memory_profiler
 
