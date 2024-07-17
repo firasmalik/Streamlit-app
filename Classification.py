@@ -1,18 +1,14 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
 from sklearn.datasets import load_iris
 from sklearn.ensemble import RandomForestClassifier
 
-
 @st.cache_data
-
 def load_data():
-    iris=load_iris()
-    df=pd.DataFrame(iris.data,columns=iris.feature_names)
-    df['species']=iris.target
-    return df,iris.target_names
-
+    iris = load_iris()
+    df = pd.DataFrame(iris.data, columns=iris.feature_names)
+    df['species'] = iris.target
+    return df, iris.target_names
 
 df,target_names=load_data()
 
@@ -33,3 +29,4 @@ predicted_species = target_names[prediction[0]]
 
 st.write("Prediction")
 st.write(f"The predicted species is: {predicted_species}")
+
