@@ -1,7 +1,10 @@
 import streamlit as st
 import pandas as pd
-from sklearn.ensemble import RandomForestClassifier
+import sklearn
 from sklearn import datasets
+from sklearn.ensemble import RandomForestClassifier
+
+
 
 # Load the iris dataset
 
