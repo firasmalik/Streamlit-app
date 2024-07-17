@@ -1,15 +1,12 @@
 import streamlit as st
 import pandas as pd
-import sklearn
+#import sklearn
 from sklearn import datasets
 from sklearn.ensemble import RandomForestClassifier
 
 
 
 # Load the iris dataset
-
-
-
 
 @st.cache_data
 def load_data():
