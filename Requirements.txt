@@ -5,4 +5,5 @@ matplotlib
 seaborn
 flask
 streamlit
+scikit-learn
 
